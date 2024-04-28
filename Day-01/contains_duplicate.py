@@ -1,17 +1,20 @@
+## Date: April 27th 2024 ##
 # Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
-### Examples ###
+######## Examples ########
 # Input: nums = [1,2,3,1]
 # Output: true
-################
+##########################
 # Input: nums = [1,2,3,4]
 # Output: false
-################
+##########################
+# Solution reference: https://www.youtube.com/watch?v=XDoF8-oy404
+##########################
 
 
 from typing import List
 
 
-class Solution():
+class Solution:
     ### Solution-1:
     def containsDuplicate(self, nums: List[int]) -> bool:
         nums.sort() # Using in-built func for list
