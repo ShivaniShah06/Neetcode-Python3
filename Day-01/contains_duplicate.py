@@ -8,6 +8,7 @@
 # Output: false
 ##########################
 # Solution reference: https://www.youtube.com/watch?v=XDoF8-oy404
+# Summary of the solution: Sort the numbers and compare each number with the next number.
 ##########################
 
 
