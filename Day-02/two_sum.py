@@ -9,6 +9,10 @@
 # Output: [0,1]
 # Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]
 ################################################################
+# Summary of solution: For each value in the list, find the difference between target and the value itself and check if the difference
+# is present in the list and if its index is not the same as the value that was subtracted from the target. If it is present, return the 
+# index values for this difference value and the value that was subtracted from the target.
+################################################################
 
 
 from typing import List

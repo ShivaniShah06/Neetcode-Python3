@@ -11,6 +11,10 @@
 # Output: false
 #####################################
 # Solution reference: https://www.youtube.com/watch?v=fHgVx_aFSlA
+# Summary of solution: Create a dictionary and iterate through the first list to record the characters as keys and number of times they are
+# seen as count. Iterate through the second dictionary and if the character does not exist in the dictionary, return false. Else, decrement the
+# count of the the character based on the number of times it is seen. Finally, iterate through the values in dictionary and return false if any
+# value is not equal to zero else, return true.
 #####################################
 
 class Solution:
