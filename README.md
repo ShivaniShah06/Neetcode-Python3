@@ -1,6 +1,6 @@
 # Neetcode-Python3
 
-### NEETCODE 150 LEETCODE QUESTIONS
+### [NEETCODE 150 LEETCODE QUESTIONS](https://neetcode.io/practice)
 
 Find important DS facts [here](important_data_structure_facts.md)
 
@@ -11,6 +11,9 @@ Find important DS facts [here](important_data_structure_facts.md)
 5. [Top k frequent elements](Day-03/Top_k_frequent_elements.py)
 6. [Encode and Decode Strings](Day-04/encode_decode_strings.py)
 7. [Product of Array except itself](Day-04/product_of_array_except_itself.py)
+8. [Valid Sudoku](Day-05/valid_sudoku.py)
+9. [Longest Consecutive Sequence](Day-05/longest_consecutive_sequence.py)
+
 
 
 ### HELPFUL RESOURCES:
