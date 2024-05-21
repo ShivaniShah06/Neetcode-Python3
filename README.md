@@ -11,3 +11,9 @@ Find important DS facts [here](important_data_structure_facts.md)
 5. [Top k frequent elements](Day-03/Top_k_frequent_elements.py)
 6. [Encode and Decode Strings](Day-04/encode_decode_strings.py)
 7. [Product of Array except itself](Day-04/product_of_array_except_itself.py)
+
+
+### HELPFUL RESOURCES:
+- TIME & SPACE COMPLEXITY: https://www.youtube.com/watch?v=FPu9Uld7W-E
+- TIME & SPACE COMPLEXITY FOR LIST, DICTIONARY, AND SET: https://www.geeksforgeeks.org/complexity-cheat-sheet-for-python-operations/
+- IMPORT HASHMAP USING PYTHON: https://www.youtube.com/watch?v=ea8BRGxGmlA
