@@ -32,11 +32,13 @@ class Solution:
         res,i = [],0
         while i < len(strs): 
             j = i
-            if strs[j] != "#":
+            while strs[j] != "#":
                 j += 1
             length = int(strs[i:j])
-            res.append(strs[j + 1 : j + 1 + length])
-            i = j + 1 + length
+            i = j+1
+            j = i+length
+            res.append(strs[i:j])
+            i = j
         return res
 
 
@@ -44,7 +46,7 @@ class Solution:
 # Calling functions
 
 solution = Solution()
-trial1 = ["lint","code","love","you"]
+trial1 = ["lint","code","love","you"] # encoded string = "4#lint4#code4#love3#you"
 string1 = solution.encode(trial1)
 print(string1)
 decoded1 = solution.decode(string1)
@@ -54,3 +56,7 @@ string2 = solution.encode(trial2)
 print(string2)
 decode2 = solution.decode(string2)
 print(decode2)
+trial3 = ["we","say",":","yes","!@#$%^&*()"]
+string3 = solution.encode(trial3)
+print(string3)
+decode3 = solution.decode(trial3)
