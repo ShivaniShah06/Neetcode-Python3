@@ -19,6 +19,7 @@ Find important DS facts [here](important_data_structure_facts.md)
 11. [Two Sum II - Input Array Is Sorted](Day-06/two_sum_II_input_sorted.py)
 12. [3Sum](Day-07/3_sum.py)
 13. [Container With Most Water](Day-07/container_with_most_water.py)
+14. [Trapping Rain Water](Day-08/trapping_rain_water.py)
 
 
 ## HELPFUL RESOURCES:
