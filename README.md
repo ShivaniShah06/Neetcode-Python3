@@ -20,7 +20,9 @@ Find important DS facts [here](important_data_structure_facts.md)
 12. [3Sum](Day-07/3_sum.py)
 13. [Container With Most Water](Day-07/container_with_most_water.py)
 14. [Trapping Rain Water](Day-08/trapping_rain_water.py)
+- **Sliding Window:**
 15. [Best Time to Buy and Sell Stock](Day-09/best_time_to_buy_and_sell_stock.py)
+16. [Longest Substring Without Repeating Characters](Day-09/longest_substring_without_repeating_characters.py)
 
 
 ## HELPFUL RESOURCES:
