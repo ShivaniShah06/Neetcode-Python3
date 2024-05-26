@@ -20,6 +20,7 @@ Find important DS facts [here](important_data_structure_facts.md)
 12. [3Sum](Day-07/3_sum.py)
 13. [Container With Most Water](Day-07/container_with_most_water.py)
 14. [Trapping Rain Water](Day-08/trapping_rain_water.py)
+15. [Best Time to Buy and Sell Stock](Day-09/best_time_to_buy_and_sell_stock.py)
 
 
 ## HELPFUL RESOURCES:
@@ -35,6 +36,10 @@ Find important DS facts [here](important_data_structure_facts.md)
 
    https://www.youtube.com/watch?v=RcZsTI5h0kg&t=11s
 
-- **Two Pointers pattern:**
+- **TWO POINTERS PATTERN:**
 
   https://www.youtube.com/watch?v=-gjxg6Pln50
+
+- **SLIDING WINDOW PATTERN:**
+   
+   https://www.youtube.com/watch?v=p-ss2JNynmw
