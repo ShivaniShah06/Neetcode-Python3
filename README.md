@@ -36,7 +36,7 @@ Find important DS facts [here](important_data_structure_facts.md)
   
     https://www.geeksforgeeks.org/complexity-cheat-sheet-for-python-operations/
 
-- **ALL ABOUT HASHMAPS:** 
+- **ALL ABOUT HASHMAPS:**
 
    https://www.youtube.com/watch?v=RcZsTI5h0kg&t=11s
 
