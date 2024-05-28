@@ -24,6 +24,7 @@ Find important DS facts [here](important_data_structure_facts.md)
 15. [Best Time to Buy and Sell Stock](Day-09/best_time_to_buy_and_sell_stock.py)
 16. [Longest Substring Without Repeating Characters](Day-09/longest_substring_without_repeating_characters.py)
 17. [Longest Repeating Character Replacement](Day-10/longest_repeating_character_replacement.py)
+18. [Permutation String](Day-11/permutation_string.py)
 
 
 ## HELPFUL RESOURCES:
@@ -35,7 +36,7 @@ Find important DS facts [here](important_data_structure_facts.md)
   
     https://www.geeksforgeeks.org/complexity-cheat-sheet-for-python-operations/
 
-- **ALL ABOUT HASHMAPS:** 
+- **ALL ABOUT HASHMAPS:**
 
    https://www.youtube.com/watch?v=RcZsTI5h0kg&t=11s
 
