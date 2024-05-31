@@ -48,6 +48,7 @@ class Solution:
         for s in strs:
             sorted_s = tuple(sorted(s)) # by default sorted() method returns list. As we want to add this as a key in a dictionary, we need to make it immutable hence converting it to tuple
             anagram_map[sorted_s].append(s)
+        #print("anagram_map:",anagram_map)
         for value in anagram_map.values():
             result.append(value)
         return result
