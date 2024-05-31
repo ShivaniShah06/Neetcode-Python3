@@ -18,13 +18,14 @@
 # Since the largest window of s only has one 'a', return empty string.
 #####################################################
 # Solution reference: https://www.youtube.com/watch?v=jSto0O4AJbM
-# Summary of solution: Use two pointer and sliding window technique. Maintain two arrays of size 26 for each string and use ord to associate index to each character from a-z. Have a variable to track the total matches at each iteration by comparing values in these arrays.
-# As soon as the variable that tracks the match is equal to 26, return true.
+# Summary of solution: Use two pointer and sliding window technique. Maintain two dictionaries with the alphabets and value of their count for both the strings. With each loop, move right pointer and add value to 
+# the dictionary for `s` string. Maintain 2 variables to store the alphabets needed and how many alphabets current window has from the needed one. Change value of the `have` variable based on
+# the current window and keep comparing.
 #####################################################
 
 class Solution:
     # Time Complexity: O(n)
-    # Space Complexity: O()
+    # Space Complexity: O(n)
 
     def minWindowSubstring(self, s: str, t: str) -> str:
         countT = {} # Dictionary to store alphabets and values in `t`
