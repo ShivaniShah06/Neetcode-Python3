@@ -13,6 +13,21 @@
 ## **LIST**
 - The search is of O(n) time complexity
 - The search with index is O(1) time complexity
+- a.sort() function does not assign value to variables. It modifies the original list and sort it:
+  ```shell
+  >>> a = [3,2,1]
+  >>> sort_func_a = a.sort()
+  >>> a
+  [1, 2, 3]
+  >>> sort_func_a
+  ```
+- Use sorted() function to assign sorted list to a variable and not modify the original list:
+  ```shell
+  >>> a = [3,2,1]
+  >>> sort_func_a = sorted(a)
+  >>> sort_func_a
+  [1, 2, 3]
+  ```
 
 ## **DICTIONARY/HASHMAPS**
 - Dictionary `cannot` have anything that it `mutable as its key`
