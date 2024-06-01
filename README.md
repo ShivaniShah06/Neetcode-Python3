@@ -26,6 +26,7 @@ Find important DS facts [here](important_data_structure_facts.md)
 17. [Longest Repeating Character Replacement](Day-10/longest_repeating_character_replacement.py)
 18. [Permutation String](Day-11/permutation_string.py)
 19. [Minimum Window Substring](Day-12/minimum_window_substring.py)
+20. [Sliding Windor Maximum](Day-13/sliding_window_maximum.py)
 
 
 ## HELPFUL RESOURCES:
