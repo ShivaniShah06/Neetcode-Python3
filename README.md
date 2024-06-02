@@ -27,6 +27,9 @@ Find important DS facts [here](important_data_structure_facts.md)
 18. [Permutation String](Day-11/permutation_string.py)
 19. [Minimum Window Substring](Day-12/minimum_window_substring.py)
 20. [Sliding Windor Maximum](Day-13/sliding_window_maximum.py)
+- **Stack:**
+21. [Valid Parantheses](Day-14/valid_parantheses.py)
+22. [Min Stack](Day-14/minStack.py)
 
 
 ## HELPFUL RESOURCES:
@@ -49,3 +52,13 @@ Find important DS facts [here](important_data_structure_facts.md)
 - **SLIDING WINDOW PATTERN:**
    
    https://www.youtube.com/watch?v=p-ss2JNynmw
+
+- **STACK:**
+
+   https://www.youtube.com/watch?v=NKmasqr_Xkw
+
+### REFERENCES:
+https://neetcode.io
+https://www.youtube.com/
+https://www.geeksforgeeks.org/
+https://leetcode.com/

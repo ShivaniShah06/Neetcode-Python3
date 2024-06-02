@@ -19,10 +19,9 @@
 # Input: nums = [1], k = 1
 # Output: [1]
 #####################################################
-# Solution reference: https://www.youtube.com/watch?v=jSto0O4AJbM
-# Summary of solution: Use two pointer and sliding window technique. Maintain two dictionaries with the alphabets and value of their count for both the strings. With each loop, move right pointer and add value to 
-# the dictionary for `s` string. Maintain 2 variables to store the alphabets needed and how many alphabets current window has from the needed one. Change value of the `have` variable based on
-# the current window and keep comparing.
+# Solution reference: https://www.youtube.com/watch?v=DfljaUwZsOk
+# Summary of solution: Use deque and sliding window technique together. Using deque, store the index of the highest seen value so far in the current window from the input list
+# and append it to the output list when your right pointer+1 >= k i.e. given window size
 #####################################################
 
 from typing import List
