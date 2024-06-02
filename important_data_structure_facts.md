@@ -7,6 +7,9 @@
 - `from collections import defaultdict`
    - Details under `Dictionary/Hashmaps` section
 
+- `from collections import deque`
+   - If you want flexibility to pop from and append to left as well as right side of the list in constant time, then use this data structure
+
 ## **IMPORTANT IN-BUILT FUNCTIONS**
 - `ord()` : Gives the ASCII value of the character. Eg: ord('a')
 
@@ -38,7 +41,24 @@
    - hashmap.values() - returns all of the values from the dictionary in form of a list
    - hashmap.items() - returns a list of the all key-value pairs as tuples
 
-## **TWO POINTER TECHNIQUE/PATTER**
+## **DEQUE**
+- Based on list only but allows us to remove elements from and appened elements to the left and right of the list in constant time
+- Functions:
+   - deque.append() - insert value in its argument to the right end --> O(1) time complexity & space complexity
+   - deque.appendleft() - insert value in its argument to the left end --> O(1) time complexity & space complexity
+   - deque.pop() - delete an argument from the right end --> O(1) time complexity & space complexity
+   - deque.popleft() - delete an argument from the left end --> O(1) time complexity & space complexity
+   - deque.extend(iterable) - add multiple values at the right end --> O(K) time complexity & space complexity
+   - deque.extendleft(iterable) - add multiple values at the left end --> O(K) time complexity & space complexity
+
+   ![alt text](Images/deque.png)
+  For more deque functions, do `help(deque)` on your python interpreter or read through [this](https://www.geeksforgeeks.org/deque-in-python/):
+     ```shell
+     >>> from collections import deque
+     >>> help(deque)
+     ```
+
+## **TWO POINTER TECHNIQUE/PATTERN**
 - Can be used for arrays, string, and some linked list questions
 - Have two pointers (eg: left & right pointers) run through your string, linked list or arrays
 - Usually reduces memory usage
@@ -61,6 +81,38 @@
 - Refer to this video to understand in detail:
 https://youtu.be/EHCGAZBbB88?si=sWUAABnN6D9YiitL
   ![Sliding Window](Images/sliding_window.png)
+
+## **STACK**
+- Stores items in `Last in First Out` or `First In Last Out` manner
+- Insertion and deletion happen on one end only and are called push and pop respectively
+- Functions:
+   - empty() - returns whether the stack is empty --> O(1) time complexity
+   - size() - returns the size of the stack - O(1) time complexity
+   - top() / peek() - returns a reference to the topmost element of the stack --> O(1) time complexity
+   - push(a) - inserts element `a` at the top of the stack --> O(1) time complexity
+   - pop() - deletes the topmost element of the stack --> O(1) time complexity
+- Can be implemented using following ways:
+   1. list
+       - Instead of `push()`, you use `append() to add elements` at the top
+       - `pop()` can be used to remove elements from top
+       - The downside is that it can run into speed issues as it grows
+   2. Collections.deque
+       - Offers quicker append and pop operations from both the ends in O(1) time complexity
+       - Use `append()` and `pop()` when implementing stack using deque()
+   3. queue.LifoQueue
+       - Use `put()` function for insertion and `get()` for deletion
+       - Functions:
+         - maxsize – number of items allowed in the queue
+         - empty() – return True if the queue is empty, False otherwise
+         - full() – return True if there are maxsize items in the queue. If the queue was initialized with maxsize=0 (the default), then full() never returns True
+         - get() – remove and return an item from the queue. If the queue is empty, wait until an item is available
+         - get_nowait() – return an item if one is immediately available, else raise QueueEmpty
+         - put(item) – put an item into the queue. If the queue is full, wait until a free slot is available before adding the item
+         - put_nowait(item) – put an item into the queue without blocking. If no free slot is immediately available, raise QueueFull
+         - qsize() – return the number of items in the queue
+   Read through [this](https://www.geeksforgeeks.org/stack-in-python/) to see examples
+
+
 
 
 
