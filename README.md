@@ -29,6 +29,7 @@ Find important DS facts [here](important_data_structure_facts.md)
 20. [Sliding Windor Maximum](Day-13/sliding_window_maximum.py)
 - **Stack:**
 21. [Valid Parantheses](Day-14/valid_parantheses.py)
+22. [Min Stack](Day-14/minStack.py)
 
 
 ## HELPFUL RESOURCES:
