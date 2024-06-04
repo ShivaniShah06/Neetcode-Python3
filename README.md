@@ -30,6 +30,7 @@ Find important DS facts [here](important_data_structure_facts.md)
 - **Stack:**
 21. [Valid Parantheses](Day-14/valid_parantheses.py)
 22. [Min Stack](Day-14/minStack.py)
+23. [Evaluate Reverse Polish Notation](Day-15/evaluate_reverse_polish_notation.py)
 
 
 ## HELPFUL RESOURCES:
