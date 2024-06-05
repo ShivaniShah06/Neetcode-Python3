@@ -16,4 +16,4 @@ from typing import List
 
 class Solution:
     def generateParantheses(self, n: int) -> List[str]:
-        # NEED TO UNDERSTAND PROPERLY TOMORROW
+        ## Not doing this until I learn foundational algorithms!
