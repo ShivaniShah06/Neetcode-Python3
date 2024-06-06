@@ -33,6 +33,10 @@ Find important DS facts [here](important_data_structure_facts.md)
 23. [Evaluate Reverse Polish Notation](Day-15/evaluate_reverse_polish_notation.py)
 
 
+## IMPORTANT ALGORITHMS
+1. [Binary Search](Algorithms/binary_search.py)
+2. [Breadth First Search](Algorithms/breadth_first_search.py)
+
 ## HELPFUL RESOURCES:
 - **TIME & SPACE COMPLEXITY:**
       
