@@ -1,6 +1,8 @@
 # Date: June 6th 2024 ##
 # Breadth First Search is a graph traversal method.
 
+# You explore the vertex first and then its children
+
 ##################### Examples ######################
 # Input: graph = {0: [1, 2], 1: [2], 2: [0, 3], 3: [3]}. We call function with vertex 2 as the starting point of the traversal
 # Output: 2, 0, 3, 1
@@ -45,6 +47,10 @@ g.addEdge(1, 2)
 g.addEdge(2, 0)
 g.addEdge(2, 3)
 g.addEdge(3, 3)
+# {0: [1,2],
+#  1: [2],
+#  2: [0, 3],
+#  3: [3]}
 g.BFS(2)
 g.BFS(1)
 
