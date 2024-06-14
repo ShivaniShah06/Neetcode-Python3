@@ -31,6 +31,10 @@ Find important DS facts [here](important_data_structure_facts.md)
 21. [Valid Parantheses](Day-14/valid_parantheses.py)
 22. [Min Stack](Day-14/minStack.py)
 23. [Evaluate Reverse Polish Notation](Day-15/evaluate_reverse_polish_notation.py)
+24. [Generate Parantheses](Day-15/generate_parantheses.py)
+25. [Daily Temperatures](Day-16/daily_temperatures.py)
+26. [Car Fleet](Day-17/car_fleet.py)
+
 
 
 ## IMPORTANT ALGORITHMS
