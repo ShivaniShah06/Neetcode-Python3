@@ -20,6 +20,8 @@
 from typing import List
 
 class Solution:
+    # Time Complexity: O(n)
+    # Space Complexity: O(n)
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         res = [0] * len(temperatures) # Initiate a list of length equal to the length of the input list with 0s in it
         stack = [] # [temp, idx]
