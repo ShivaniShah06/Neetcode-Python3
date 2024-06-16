@@ -35,6 +35,8 @@ Find important DS facts [here](important_data_structure_facts.md)
 25. [Daily Temperatures](Day-16/daily_temperatures.py)
 26. [Car Fleet](Day-17/car_fleet.py)
 27. [Largest Rectangle in Histogram](Day-18/largest_rectangle_in_histogram.py)
+- **Binary Search:**
+28. [Binary Search](Day-19/binary_search.py)
 
 
 
