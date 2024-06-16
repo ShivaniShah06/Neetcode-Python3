@@ -41,7 +41,7 @@
 # Then, the fleet at 4 (speed 2) and the car at position 5 (speed 1) become one fleet, meeting each other at 6. The fleet moves at speed 1 until it reaches target.
 #####################################################
 # Solution reference: https://www.youtube.com/watch?v=Pr6T-3yB9RM
-# Summary of solution: 
+# Summary of solution: Summary in the comments!
 #####################################################
 
 from typing import List
