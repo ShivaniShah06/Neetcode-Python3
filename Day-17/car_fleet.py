@@ -56,7 +56,7 @@ class Solution:
         # Sort the pair of [position,speed] of cars using sorted method. This will sort `positionSpeed` array based on value of position
         # Iterate through the sorted array in reverse order
         # Calculate the time required to reach the target during each iteration and append it to stack
-        # Since we are moving from left to right (reverse) in the array `positionSpeed` the distance remaining to cover to reach to the targer
+        # Since we are moving from left to right (reverse) in the array `positionSpeed` the distance remaining to cover to reach to the target
         # would keep increasing as we move towards right. After appending the value to the top of the stack, we check if the car that has to cover more distance
         # takes less time than the one that has to cover less distance. If this condition becomes true, then we pop the value of the 
         # car that is moving faster i.e. the car that has to cover more distance (as its speed will change to car that is moving slower as per the question)
