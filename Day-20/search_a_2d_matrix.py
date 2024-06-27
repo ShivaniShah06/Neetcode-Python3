@@ -15,7 +15,9 @@
 # Output: false
 #####################################################
 # Solution reference: https://www.youtube.com/watch?v=Ber2pi2C0j0
-# Summary of solution: 
+# Summary of solution: Run 2 binary searches. First from top to bottom (top = 0 and bottom = rows - 1). 
+# Find which row the target value exist in by comparing it with the first and the last value in each row. 
+# Run second binary search on the row where the target value falls to check if it actually exists.
 #####################################################
 
 from typing import List
