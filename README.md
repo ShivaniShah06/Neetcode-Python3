@@ -39,6 +39,7 @@ Find important DS facts [here](important_data_structure_facts.md)
 28. [Binary Search](Day-19/binary_search.py)
 29. [Search a 2D matrix](Day-20/search_a_2d_matrix.py)
 30. [Koko Eating Bananas](Day-21/koko_eating_bananas.py)
+31. [Find Minimum in Rotated Sorted Array](Day-22/find_minimum_in_rotated_sorted_array.py)
 
 
 
