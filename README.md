@@ -46,7 +46,7 @@ Find important DS facts [here](important_data_structure_facts.md)
 ## IMPORTANT ALGORITHMS
 1. [Binary Search](Algorithms/binary_search.py)
 2. [Breadth First Search](Algorithms/breadth_first_search.py)
-3, [Depth First Search](Algorithms/depth_first_search.py)
+3. [Depth First Search](Algorithms/depth_first_search.py)
 
 ## HELPFUL RESOURCES:
 - **TIME & SPACE COMPLEXITY:**
@@ -75,6 +75,9 @@ Find important DS facts [here](important_data_structure_facts.md)
 
 ### REFERENCES:
 https://neetcode.io
+
 https://www.youtube.com/
+
 https://www.geeksforgeeks.org/
+
 https://leetcode.com/
