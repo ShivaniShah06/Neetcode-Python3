@@ -30,6 +30,19 @@ class Solution:
             dic["".join(sorted(word))].append(word)
         return dic.values()
     
+     # Time complexity: O(m * nlogn)
+    # Space complexity: O(m * n)
+    def group_anagram_easy(self, strs: List[str]) -> List[List[str]]:
+        anagram_map = defaultdict(list)
+        result = []
+        for s in strs:
+            sorted_s = tuple(sorted(s)) # by default sorted() method returns list. As we want to add this as a key in a dictionary, we need to make it immutable hence converting it to tuple
+            anagram_map[sorted_s].append(s)
+        #print("anagram_map:",anagram_map)
+        for value in anagram_map.values():
+            result.append(value)
+        return result
+
     # Time complexity: O(n)
     # Space complexity: O(n)
     def group_anagram_improved(self, strs: List[str]) -> List[List[str]]:
@@ -44,19 +57,6 @@ class Solution:
         for value in dic.values():
             result.append(value)
         return result
-        
-    def group_anagram_easy(self, strs: List[str]) -> List[List[str]]:
-        anagram_map = defaultdict(list)
-        result = []
-        for s in strs:
-            sorted_s = tuple(sorted(s)) # by default sorted() method returns list. As we want to add this as a key in a dictionary, we need to make it immutable hence converting it to tuple
-            anagram_map[sorted_s].append(s)
-        #print("anagram_map:",anagram_map)
-        for value in anagram_map.values():
-            result.append(value)
-        return result
-
-
 
 
 solution = Solution()
