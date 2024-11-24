@@ -30,18 +30,8 @@ class Solution:
             dic["".join(sorted(word))].append(word)
         return dic.values()
     
-    # Time complexity: O(n)
-    # Space complexity: O(n)
-    def group_anagram_improved(self, strs: List[str]) -> List[List[str]]:
-        dic = defaultdict(list)
-        for word in strs:
-            lst = [0]*26 # 26 characters from a-z
-            for char in word:
-                lst[ord(char) - ord('a')] += 1 # ord maps characters to their ASCII values. Check this out to understand more https://youtu.be/9_iwjawJhdc?si=RXYfa0NFCLvNalL3&t=684
-            lst = tuple(lst)
-            dic[lst].append(word)
-        return dic.values()
-    
+     # Time complexity: O(m * nlogn)
+    # Space complexity: O(m * n)
     def group_anagram_easy(self, strs: List[str]) -> List[List[str]]:
         anagram_map = defaultdict(list)
         result = []
@@ -53,7 +43,20 @@ class Solution:
             result.append(value)
         return result
 
-
+    # Time complexity: O(n)
+    # Space complexity: O(n)
+    def group_anagram_improved(self, strs: List[str]) -> List[List[str]]:
+        dic = defaultdict(list)
+        result = []
+        for word in strs:
+            lst = [0]*26 # 26 characters from a-z
+            for char in word:
+                lst[ord(char) - ord('a')] += 1 # ord maps characters to their ASCII values. Check this out to understand more https://youtu.be/9_iwjawJhdc?si=RXYfa0NFCLvNalL3&t=684
+            lst = tuple(lst)
+            dic[lst].append(word)
+        for value in dic.values():
+            result.append(value)
+        return result
 
 
 solution = Solution()
