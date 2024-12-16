@@ -20,7 +20,8 @@
 ##################################################################
 
 from typing import List
-
+# Time Complexity: O(m) => m is the sum of length of all the strings
+# Space Complexity: O(1)
 class Solution:
     def encode(self, strs: List[str]) -> str:
         res = ""
