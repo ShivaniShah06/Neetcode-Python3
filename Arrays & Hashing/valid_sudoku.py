@@ -45,7 +45,8 @@ from typing import List
 from collections import defaultdict
 
 class Solution:
-    
+    # Time Complexity: O(n^2)
+    # Space Complexity: O(n^2)
     def valid_sudoku(self, board: List[List[str]]) -> bool:
         rows = defaultdict(set)
         cols = defaultdict(set)
@@ -62,6 +63,9 @@ class Solution:
                 rows[row].add(board[row][column])
                 cols[column].add(board[row][column])
                 squares[(row//3, column//3)].add(board[row][column])
+        # print("rows:", rows)
+        # print("cols:", cols)
+        # print("squares:", squares)
         return True
     
 # Calling the function
