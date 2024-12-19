@@ -36,9 +36,18 @@ class Solution:
     ### Solution-3: ## This solution does not modify the original list ##
     def containsDuplicate3(self, nums: List[int]) -> bool:
         if len(nums) != len(set(nums)): # as set only has unique values, if there are duplicate values in the list, the length of set will be less than the actual list
-            print(nums)
             return True
-        print(nums)
+        return False
+    ### Solution-4: Most efficient - stores values seen in hashmap and keeps comparing with hashmap
+    # Time Complexity: O(n)
+    # Space Complexity: O(n)
+    def containsDuplicate4(self, nums: List[int]) -> bool:
+        nums_dict = {}
+        for i in range(len(nums)):
+            if nums[i] in nums_dict:
+                return True
+            else:
+                nums_dict[nums[i]] = 1
         return False
 
         
@@ -58,9 +67,10 @@ print(solution.containsDuplicate2(list1))
 print(solution.containsDuplicate2(list2))
 print(solution.containsDuplicate2(list3))
 print("********** Answers from Solution-3 **********")
-list4 = [1,2,3,1]
-list5 = [1,2,3,4]
-list6 = [1,3,3,4,3,2,4,2]
-print(solution.containsDuplicate3(list4))
-print(solution.containsDuplicate3(list5))
-print(solution.containsDuplicate3(list6))
+print(solution.containsDuplicate3(list1))
+print(solution.containsDuplicate3(list2))
+print(solution.containsDuplicate3(list3))
+print("********** Answers from Solution-4 **********")
+print(solution.containsDuplicate4(list1))
+print(solution.containsDuplicate4(list2))
+print(solution.containsDuplicate4(list3))

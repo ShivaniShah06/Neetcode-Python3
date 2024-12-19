@@ -19,6 +19,7 @@ class Solution:
     # Time complexity: O(n)
     # Space complexity: O(n)
     def top_k_frequent_elements(self, nums: List[int], k: int) -> List[int]:
+        # can also use a dictionary instead of "Counter" to avoid using internal library. Use a for loop to count the frequency of numbers
         counter = Counter(nums) # will give a dictionary with number as key and its count as value
         n = len(nums)
         print(counter)

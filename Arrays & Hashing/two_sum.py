@@ -37,6 +37,8 @@ class Solution:
         return "None of the 2 values add up to become the value of target."
     
     #### MOST EFFICIENT SOLUTION ####
+    # Time Complexity: O(n)
+    # Space Complexity: O(n)
     def two_sum_efficient(self, nums: List[int], target: int) -> List[int]:
         prevMap = {} # value:index format
         for i, n in enumerate(nums): #i is index and n is value
@@ -44,8 +46,18 @@ class Solution:
             if diff in prevMap:
                 return [prevMap[diff], i]
             prevMap[n] = i # Adding the value and its index in hashmap. Doing this in order to prevent calculations with itself
-    
 
+    #### MOST EFFICIENT SOLUTION ####
+    # Time Complexity: O(n)
+    # Space Complexity: O(n)
+    def two_sum_efficient_2(self, nums: List[int], target: int) -> List[int]:
+        indices = {}
+        for i in range(len(nums)):
+            diff = target - nums[i]
+            if diff not in indices:
+                indices[nums[i]] = i
+            else:
+                return [indices[diff], i]
 
 ###### Calling the function ######
 nums = [2,7,11,15]
@@ -54,3 +66,4 @@ solution = Solution()
 print(solution.two_sum_bruteforce(nums,target))
 print(solution.two_sum(nums,target))
 print(solution.two_sum_efficient(nums, target))
+print(solution.two_sum_efficient_2(nums, target))
