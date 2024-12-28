@@ -32,7 +32,8 @@ class Solution:
     # Space Complexity: O(1)
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         result = []
-        sorted_nums = nums.sort()
+        #sorted_nums = nums.sort() => This modifies the original array i.e., nums = [-4,-1,-1,0,1,2] and the value of sorted_nums will be None
+        sorted_nums = sorted(nums)
         
         for i in range(len(sorted_nums)): # Run for loop for each element in the sorted list
             if i != 0 and sorted_nums[i] == sorted_nums[i-1]: # As no duplicates are allowed, make sure that if index is not 0, then the current element and the earlier element are not same

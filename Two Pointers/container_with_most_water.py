@@ -21,10 +21,19 @@
 
 from typing import List
 class Solution:
+
+    # Time Complexity: O(n^2)
+    # Space Complexity: O(1)
+    def container_with_most_water(self, heights: List[int]) -> int:
+        maxArea = 0
+        for i in range(len(heights)):
+            for j in range(i+1, len(heights)):
+                maxArea = max(maxArea, (min(heights[j], heights[i])*(j - i)))
+        return maxArea
     
     # Time Complexity: O(n)
     # Space Complexity: O(1)
-    def container_with_most_water(self, height: List[int]) -> int:
+    def container_with_most_water_efficient(self, height: List[int]) -> int:
         l = 0 # Initialize left pointer
         r = len(height) - 1 # Initialize right pointer
         max_area = 0 # Initialize variable to record maximum area
@@ -48,3 +57,6 @@ height3 = [1,2,1]
 print(solution.container_with_most_water(height1))
 print(solution.container_with_most_water(height2))
 print(solution.container_with_most_water(height3))
+print(solution.container_with_most_water_efficient(height1))
+print(solution.container_with_most_water_efficient(height2))
+print(solution.container_with_most_water_efficient(height3))
