@@ -39,9 +39,9 @@ class Solution:
          # 1. We can then compare the value for this alphabet from the respective dictionaries to compare the count
         need = len(countT)
         left = 0 # Left pointer
-        result = [-1,-1] # Initiate result list
+        result = [-1,-1] # Initiate result list to record the values of left and right pointers
         resultLength = float("infinity") # Initiate resultLength to infinity as we need this variable with a value such that in the first loop, the first value is less than this value as we are looking for the minimum substring length
-
+        # resultLength can also be initialized with value `resultLength = len(s) + 1` because there cannot be a substring with length greater than the actual string
         for right in range(len(s)):
             current = s[right] # Assign current value at the right pointer to current variable
             window[current] = 1 + window.get(current, 0) # If the current letter exist in the window dictionary, then increment its value by 1 else add it with value 1
@@ -53,7 +53,7 @@ class Solution:
             
             # While loop to run when the count for the number of alphabets in `t` and `s` in the current window are same
             while have == need:
-                if right - left + 1 < resultLength: # If the current window lenght is less than resultLength, then update `result`` and `resultLength`` variables
+                if right - left + 1 < resultLength: # If the current window length is less than resultLength, then update `result` and `resultLength` variables
                     result = [left, right]
                     resultLength = right - left + 1
                 

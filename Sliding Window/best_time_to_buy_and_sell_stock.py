@@ -22,6 +22,18 @@
 from typing import List
 
 class Solution:
+
+    # Time Complexity: O(n^2)
+    # Space Complexity: O(1)
+    def maxProfit_bruteforce(self, prices: List[int]) -> int:
+        res = 0
+        for i in range(len(prices)):
+            buy = prices[i]
+            for j in range(i+1, len(prices)):
+                sell = prices[j]
+                res = max(res, sell- buy)
+        return res
+
     # Time Complexity: O(n)
     # Space Complexity: O(1)
 
@@ -43,5 +55,7 @@ class Solution:
 solution = Solution()
 prices1 = [7,1,5,3,6,4]
 prices2 = [7,6,4,3,1]
+print(solution.maxProfit_bruteforce(prices1))
+print(solution.maxProfit_bruteforce(prices2))
 print(solution.maxProfit(prices1))
 print(solution.maxProfit(prices2))

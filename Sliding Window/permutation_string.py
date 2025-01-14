@@ -63,7 +63,7 @@ class Solution:
 
             l += 1 # Increment the value for the left pointer
 
-        return matches == 26 # If matches == 26, return true. Else false
+        return matches == 26 # If matches == 26, return true. Else false. We don't return False directly because after the for loop ends, we are not checking if matches == 26 or not
 
             
 # Calling functions
