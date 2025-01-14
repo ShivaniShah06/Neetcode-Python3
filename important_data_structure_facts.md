@@ -34,7 +34,7 @@
      - Eg: Find the largest sum from the subarrays of size 3 from the given array
    2. `Variable size` -> Window size will change based on the given condition and the question will mostly ask to find the largest or the smalles window size
       - Eg: Find the largest subarray whose sum equals to 5
-- Refer to this video to understand in detail:
+- Refer to this video to understand in detail (in Hindi language):
 https://youtu.be/EHCGAZBbB88?si=sWUAABnN6D9YiitL
   ![Sliding Window](Images/sliding_window.png)
 

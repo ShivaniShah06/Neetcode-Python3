@@ -18,10 +18,12 @@
 #####################################
 
 class Solution:
+    # Time Complexity: O(n)
+    # Space Complexity: O(26) == O(1)
     def isAnagram(self, s: str,t: str):
         dict_value = {} # create empty dictionary
         
-        for letter in s: # check if the letter in `s`` exist in the dictionary
+        for letter in s: # check if the letter in `s` exist in the dictionary
             if letter not in dict_value: # if not, add the letter as key and its value as 1
                 dict_value[letter] = 1
             else:
